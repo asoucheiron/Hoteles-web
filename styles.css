@@ -1,16 +1,85 @@
+/* RESET I BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    padding: 30px;
+    color: #333;
 }
 
-#hotel-list a {
-    display: block;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: blue;
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
 }
 
-#hotel-list label {
-    display: block;
-    margin-bottom: 5px;
+/* CONTAINER DE HOTELS */
+.hotel {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.hotel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER DEL HOTEL */
+.hotel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+/* ICON + / - */
+.hotel-header span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2980b9;
+}
+
+/* CONTENT DEL HOTEL */
+.hotel-content {
+    margin-top: 12px;
+    display: none;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* BOTÓ */
+.hotel-content button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #2980b9;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.hotel-content button:hover {
+    background-color: #1c5980;
+    transform: translateY(-1px);
+}
+
+/* ADRECES I COMENTARIS */
+.hotel-content p {
+    line-height: 1.4;
 }

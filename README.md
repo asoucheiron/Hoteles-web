@@ -6,10 +6,13 @@ Implementación de una Web-App, que para lo que se pide será más que suficient
 
 Descripción de los archivos necesarios:
 
-Index.html: 
+Index.html: Archivo muy simple que sirve de estructura básica para que la web funcione correctamente y es prácticamente un esqueleto que se podría usar para múltiples webs, solo he añadido dos links, uno para poder usar las APIs de google y la otra para generar QR(esta segunda no debería ser del todo necesaria debido que el QR será impreso y puramente para acceder a la web.)
 
-script.js: 
+script.js: Este es el archivo clave del programa ya que aquí se gestiona toda la navegación de la web así como la comunicación con las APIs de google.
 
-style.css:
+style.css: Archivo también muy básico para darle algo de forma y estilo a la web y que luzca mínimamente presentable.
 
 hotels.json: Listado de hoteles con su enlace a google maps.
+
+
+Formato Excel a JSON: Para que sea más fácil trabajar con el archivo de Excel y no tener que pasar manualmente todos los hoteles, transformaremos el Excel a Google sheet para asegurar que tiene X columnas, posteriormente guardaremos una copia en formato CSV(nos guarda los valores separados por ",") y con una web online convertiremos el fichero CSV a formato JSON. Todo este proceso nos ahorrará mucho tiempo.
