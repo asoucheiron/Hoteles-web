@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#hotel-list a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: blue;
+}
+
+#hotel-list label {
+    display: block;
+    margin-bottom: 5px;
+}

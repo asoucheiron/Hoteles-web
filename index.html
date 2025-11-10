@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotels i Rutes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 </head>
 
 <body>
+    <h1>Llista d'Hotels</h1>
 
+    <div id="hotel-list"></div>
+
+    <h2>Mapa de la ruta</h2>
+    <div id="map" style="width:100%; height:500px;"></div>
+
+    <h2>QR de la web</h2>
+    <div id="qrcode"></div>
+
+    <button id="calculate-route">Calcular ruta òptima</button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
